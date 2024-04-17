@@ -8,19 +8,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <!-- customize color -->
+    <!-- ===================================customize color=============================== -->
     <div class="bg-purple-400">color</div>
     <br>
 
-    <!-- customize opacity -->
+    <!-- ===============================customize opacity============================= -->
     <div class="bg-red-400/30">Opacity</div>
     <br>
 
-    <!-- gradient color -->
+    <!-- =======================gradient color============================== -->
     <div class="bg-gradient-to-b from-blue-500 via-pink-300 to-purple-500">gradient</div>
     <br>
 
-    <!-- height -->
+    <!-- ========================height========================================= -->
     <div class="h-1 bg-red-700">h-1</div>
     <br>
     <div class="h-5 bg-blue-700">h-5</div>
@@ -28,7 +28,7 @@
     <div class="h-[50vh] bg-green-700">h-1</div>
     <br>
 
-    <!-- width -->
+    <!-- ========================width================================== -->
     <div class="w-2 bg-red-700">h-1</div>
     <br>
     <div class="w-10 bg-blue-700">h-5</div>
@@ -44,7 +44,7 @@
     to-yellow-400">Color</div>
     <br>
 
-    <!-- padding -->
+    <!-- =============================padding=================================== -->
     <div class="p-5 bg-red-400">padding</div>
     <br>
     <div class="px-5 bg-yellow-400">padding</div>
@@ -54,7 +54,7 @@
     <div class="pt-10 pb-3 pl-5 bg-pink-400">padding</div>
     <br>
 
-    <!-- margin -->
+    <!-- ==================================margin===================================== -->
     <div class="m-5 bg-red-400">margin</div>
     <br>
     <div class="mx-5 bg-yellow-400">margin</div>
@@ -64,7 +64,7 @@
     <div class="mt-10 ml-5 mr-1 bg-pink-400">margin</div>
     <br>
 
-    <!-- typography -->
+    <!-- ====================================typography============================== -->
     <div class="font-serif">Font</div>
     <div class="font-sans">Font</div>
     <div class="font-mono">Font</div>
@@ -105,7 +105,7 @@
         earum pariatur.
     </p>
 
-    <!-- 4.text-decoration color,-->
+    <!-- 6.text-decoration color,-->
     <p class="underline capitalize decoration-blue-400 decoration-double">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Assumenda, vitae? Voluptates mollitia repellendus alias cumque
@@ -114,10 +114,10 @@
         earum pariatur.
     </p>
 
-    <!-- 4.cliptext -->
+    <!-- 7.cliptext -->
     <div class="text-center text-transparent text-9xl bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text">Cliptext</div>
     
-    <!-- Positioning -->
+    <!-- =====================Positioning================================= -->
 
     <!-- 1.position -->
     <div class="absolute top-90 left-5">Position</div>
@@ -139,6 +139,54 @@
     <div class="float-right w-32 p-10 m-4 bg-yellow-500">float</div>
     <div class="clear-right w-32 p-10 m-4 bg-green-500">float</div>
 
-    <!-- flex-box -->
+    <!-- ==========================flex-box======================================= -->
+    <!-- 1.flex,flex-direction -->
+    <div class="flex flex-row">
+        <div class="bg-purple-500 w-[800px]">box1</div>
+        <div class="bg-purple-500">box2</div>
+        <div class="bg-purple-500">box3</div>
+    </div>
+    <br>
+    <!-- 2.flex-wrap -->
+    <div class="flex flex-row flex-wrap">
+        <div class="bg-yellow-500 w-[800px]">box1</div>
+        <div class="bg-yellow-500">box2</div>
+        <div class="bg-yellow-500">box3</div>
+    </div>
+    <br>
+    <!-- 3.flex-grow -->
+    <div class="flex flex-row">
+        <div class="bg-red-500 w-[400px]">box1</div>
+        <div class="flex-grow bg-red-500">box2</div>
+        <div class="bg-red-500">box3</div>
+    </div>
+    <br>
+    <!-- 4.order -->
+    <div class="flex flex-row">
+        <div class="order-2 bg-red-500">box1</div>
+        <div class="order-1 bg-red-500">box2</div>
+        <div class="order-3 bg-red-500">box3</div>
+    </div>
+    <br>
+    <!-- 5.gap -->
+    <div class="flex flex-row gap-1">
+        <div class="bg-green-500 ">box1</div>
+        <div class="bg-green-500 ">box2</div>
+        <div class="bg-green-500 ">box3</div>
+    </div>
+    <br>
+    <!-- 6.justify-content -->
+    <div class="flex flex-row justify-center bg-blue-300">
+        <div class="bg-blue-500 ">box1</div>
+        <div class="bg-blue-500 ">box2</div>
+        <div class="bg-blue-500 ">box3</div>
+    </div>
+    <br>
+    <!-- 7.align-items -->
+    <div class="flex flex-row items-center bg-blue-300 h-[30vh]">
+        <div class="bg-blue-500 ">box1</div>
+        <div class="bg-blue-500 ">box2</div>
+        <div class="bg-blue-500 ">box3</div>
+    </div>
 </body>
 </html>
