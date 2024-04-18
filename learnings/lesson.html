@@ -4,32 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/lesson.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
     <title>Tailwind-CSS-Lesson</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: 'green',
+              },
+              screens: {
+                bp: '600px'
+              },
+              fontFamily: {
+                poor: ["Poor Story"]
+              }
+            }
+          }
+        }
+      </script>
+    <style type="text/tailwindcss">
+        .box {
+            @apply bg-black text-white p-10
+        }
+    </style>
 </head>
 <body class="bg-gray-300">
     <!-- ===================================customize color=============================== -->
-    <div class="bg-purple-400">color</div>
-    <br>
+    <!-- <div class="bg-purple-400">color</div>
+    <br> -->
 
     <!-- ===============================customize opacity============================= -->
-    <div class="bg-red-400/30">Opacity</div>
-    <br>
+    <!-- <div class="bg-red-400/30">Opacity</div>
+    <br> -->
 
     <!-- =======================gradient color============================== -->
-    <div class="bg-gradient-to-b from-blue-500 via-pink-300 to-purple-500">gradient</div>
-    <br>
+    <!-- <div class="bg-gradient-to-b from-blue-500 via-pink-300 to-purple-500">gradient</div>
+    <br> -->
 
     <!-- ========================height========================================= -->
-    <div class="h-1 bg-red-700">h-1</div>
+    <!-- <div class="h-1 bg-red-700">h-1</div>
     <br>
     <div class="h-5 bg-blue-700">h-5</div>
     <br>
     <div class="h-[50vh] bg-green-700">h-1</div>
-    <br>
+    <br> -->
 
     <!-- ========================width================================== -->
-    <div class="w-2 bg-red-700">h-1</div>
+    <!-- <div class="w-2 bg-red-700">h-1</div>
     <br>
     <div class="w-10 bg-blue-700">h-5</div>
     <br>
@@ -38,193 +63,209 @@
     <div class="w-[50vw] bg-yellow-700">h-1</div>
     <br>
     <div class="max-w-screen-md bg-purple-700">h-1</div>
-    <br>
+    <br> -->
 
-    <div class="h-[50vh] w-1/2 bg-gradient-to-tl from-green-400 via-red-300
+    <!-- <div class="h-[50vh] w-1/2 bg-gradient-to-tl from-green-400 via-red-300
     to-yellow-400">Color</div>
-    <br>
+    <br> -->
 
     <!-- =============================padding=================================== -->
-    <div class="p-5 bg-red-400">padding</div>
+    <!-- <div class="p-5 bg-red-400">padding</div>
     <br>
     <div class="px-5 bg-yellow-400">padding</div>
     <br>
     <div class="py-5 bg-blue-400">padding</div>
     <br>
     <div class="pt-10 pb-3 pl-5 bg-pink-400">padding</div>
-    <br>
+    <br> -->
 
     <!-- ==================================margin===================================== -->
-    <div class="m-5 bg-red-400">margin</div>
+    <!-- <div class="m-5 bg-red-400">margin</div>
     <br>
     <div class="mx-5 bg-yellow-400">margin</div>
     <br>
     <div class="my-20 bg-blue-400">margin</div>
     <br>
     <div class="mt-10 ml-5 mr-1 bg-pink-400">margin</div>
-    <br>
+    <br> -->
 
     <!-- ====================================typography============================== -->
-    <div class="font-serif">Font</div>
+    <!-- <div class="font-serif">Font</div>
     <div class="font-sans">Font</div>
     <div class="font-mono">Font</div>
     <div class="font-bold">Font</div>
 
-    <div class="italic">Font</div>
+    <div class="italic">Font</div> -->
 
     <!-- 1.size -->
-    <div class="text-5xl">Font</div>
+    <!-- <div class="text-5xl">Font</div> -->
     
     <!-- 2.letter-spacing -->
-    <div class="tracking-widest">Font</div>
+    <!-- <div class="tracking-widest">Font</div> -->
 
     <!-- 3.line-height -->
-    <p class="leading-snug">
+    <!-- <p class="leading-snug">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Assumenda, vitae? Voluptates mollitia repellendus alias cumque
         voluptatem, repellat odit tenetur facilis distinctio,
         sit magnam exercitationem asperiores neque fugiat deserunt,
         earum pariatur.
-    </p>
+    </p> -->
 
     <!-- 4.text-align -->
-    <p class="text-center">
+    <!-- <p class="text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Assumenda, vitae? Voluptates mollitia repellendus alias cumque
         voluptatem, repellat odit tenetur facilis distinctio,
         sit magnam exercitationem asperiores neque fugiat deserunt,
         earum pariatur.
-    </p>
+    </p> -->
 
     <!-- 5.text-color -->
-    <p class="text-red-500">
+    <!-- <p class="text-red-500">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Assumenda, vitae? Voluptates mollitia repellendus alias cumque
         voluptatem, repellat odit tenetur facilis distinctio,
         sit magnam exercitationem asperiores neque fugiat deserunt,
         earum pariatur.
-    </p>
+    </p> -->
 
     <!-- 6.text-decoration color,-->
-    <p class="underline capitalize decoration-blue-400 decoration-double">
+    <!-- <p class="underline capitalize decoration-blue-400 decoration-double">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Assumenda, vitae? Voluptates mollitia repellendus alias cumque
         voluptatem, repellat odit tenetur facilis distinctio,
         sit magnam exercitationem asperiores neque fugiat deserunt,
         earum pariatur.
-    </p>
+    </p> -->
 
     <!-- 7.cliptext -->
-    <div class="text-center text-transparent text-9xl bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text">Cliptext</div>
+    <!-- <div class="text-center text-transparent text-9xl bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text">Cliptext</div> -->
     
     <!-- =====================Positioning================================= -->
 
     <!-- 1.position -->
-    <div class="absolute top-90 left-5">Position</div>
-    <br>
+    <!-- <div class="absolute top-90 left-5">Position</div>
+    <br> -->
     <!-- 2.visibility -->
-    <div class="visible">Visible</div>
-    <div class="invisible">Invisible</div>
+    <!-- <div class="visible">Visible</div>
+    <div class="invisible">Invisible</div> -->
 
     <!-- 3.Z-index -->
-    <div class="relative z-10 w-32 p-10 m-4 bg-blue-500">Z-index</div>
-    <div class="relative z-20 w-32 p-10 m-4 -mt-8 bg-yellow-500">Z-index</div>
+    <!-- <div class="relative z-10 w-32 p-10 m-4 bg-blue-500">Z-index</div>
+    <div class="relative z-20 w-32 p-10 m-4 -mt-8 bg-yellow-500">Z-index</div> -->
 
     <!-- 4.display -->
-    <div class="inline-block w-32 p-10 m-4 bg-blue-500">display</div>
-    <div class="inline-block w-32 p-10 m-4 -mt-8 bg-yellow-500">display</div>
+    <!-- <div class="inline-block w-32 p-10 m-4 bg-blue-500">display</div>
+    <div class="inline-block w-32 p-10 m-4 -mt-8 bg-yellow-500">display</div> -->
 
     <!-- 5.float -->
-    <div class="w-32 p-10 m-4 bg-blue-500">float</div>
+    <!-- <div class="w-32 p-10 m-4 bg-blue-500">float</div>
     <div class="float-right w-32 p-10 m-4 bg-yellow-500">float</div>
-    <div class="clear-right w-32 p-10 m-4 bg-green-500">float</div>
+    <div class="clear-right w-32 p-10 m-4 bg-green-500">float</div> -->
 
     <!-- ==========================flex-box======================================= -->
     <!-- 1.flex,flex-direction -->
-    <div class="flex flex-row">
+    <!-- <div class="flex flex-row">
         <div class="bg-purple-500 w-[800px]">box1</div>
         <div class="bg-purple-500">box2</div>
         <div class="bg-purple-500">box3</div>
     </div>
-    <br>
+    <br> -->
     <!-- 2.flex-wrap -->
-    <div class="flex flex-row flex-wrap">
+    <!-- <div class="flex flex-row flex-wrap">
         <div class="bg-yellow-500 w-[800px]">box1</div>
         <div class="bg-yellow-500">box2</div>
         <div class="bg-yellow-500">box3</div>
     </div>
-    <br>
+    <br> -->
     <!-- 3.flex-grow -->
-    <div class="flex flex-row">
+    <!-- <div class="flex flex-row">
         <div class="bg-red-500 w-[400px]">box1</div>
         <div class="flex-grow bg-red-500">box2</div>
         <div class="bg-red-500">box3</div>
     </div>
-    <br>
+    <br> -->
     <!-- 4.order -->
-    <div class="flex flex-row">
+    <!-- <div class="flex flex-row">
         <div class="order-2 bg-red-500">box1</div>
         <div class="order-1 bg-red-500">box2</div>
         <div class="order-3 bg-red-500">box3</div>
     </div>
-    <br>
+    <br> -->
     <!-- 5.gap -->
-    <div class="flex flex-row gap-1">
+    <!-- <div class="flex flex-row gap-1">
         <div class="bg-green-500 ">box1</div>
         <div class="bg-green-500 ">box2</div>
         <div class="bg-green-500 ">box3</div>
     </div>
-    <br>
+    <br> -->
     <!-- 6.justify-content -->
-    <div class="flex flex-row justify-center bg-blue-300">
+    <!-- <div class="flex flex-row justify-center bg-blue-300">
         <div class="bg-blue-500 ">box1</div>
         <div class="bg-blue-500 ">box2</div>
         <div class="bg-blue-500 ">box3</div>
     </div>
-    <br>
+    <br> -->
     <!-- 7.align-items -->
-    <div class="flex flex-row items-center bg-blue-300 h-[30vh]">
+    <!-- <div class="flex flex-row items-center bg-blue-300 h-[30vh]">
         <div class="bg-blue-500 ">box1</div>
         <div class="bg-blue-500 ">box2</div>
         <div class="bg-blue-500 ">box3</div>
     </div>
-    <br>
+    <br> -->
 
     <!-- =================css grid=========================== -->
-    <div class="bg-blue-300 h-[30vh] grid grid-cols-2 gap-3">
+    <!-- <div class="bg-blue-300 h-[30vh] grid grid-cols-2 gap-3">
         <div class="bg-blue-500 ">col</div>
         <div class="bg-blue-500 ">col</div>
         <div class="col-span-2 bg-blue-500">col</div>
     </div>
-    <br>
+    <br> -->
 
     <!-- =================css borders=========================== -->
-    <div class="bg-blue-500 border-[10px] border-blue-700 border-dotted
+    <!-- <div class="bg-blue-500 border-[10px] border-blue-700 border-dotted
     rounded-l-full">Border</div>
-    <br>
+    <br> -->
     <!-- =================css effects =========================== -->
     <!-- 1.box-shadow -->
-    <div class="w-32 h-32 m-4 bg-white shadow-lg">effect</div>
-    <br>
+    <!-- <div class="w-32 h-32 m-4 bg-white shadow-lg">effect</div>
+    <br> -->
     <!-- 2.box-shadow-color -->
-    <div class="w-32 h-32 m-4 bg-white shadow-lg shadow-green-400">effect</div>
-    <br>
+    <!-- <div class="w-32 h-32 m-4 bg-white shadow-lg shadow-green-400">effect</div>
+    <br> -->
     <!-- 3.opacity -->
-    <div class="w-32 h-32 m-4 bg-white shadow-lg opacity-70 shadow-green-400">effect</div>
-    <br>
+    <!-- <div class="w-32 h-32 m-4 bg-white shadow-lg opacity-70 shadow-green-400">effect</div>
+    <br> -->
 
     <!-- =================transform and interactivity =========================== -->
     <!-- 1.scale -->
-    <div class="w-32 h-32 m-40 scale-125 bg-orange-300">scale</div>
-    <br>
+    <!-- <div class="w-32 h-32 m-40 scale-125 bg-orange-300">scale</div>
+    <br> -->
     <!-- 2.rotate -->
-    <div class="w-32 h-32 m-4 rotate-45 bg-purple-800">rotate</div>
-    <br>
+    <!-- <div class="w-32 h-32 m-4 rotate-45 bg-purple-800">rotate</div>
+    <br> -->
     <!-- 3.cursor -->
-    <div class="w-32 h-32 m-4 bg-yellow-800 cursor-progress">cursor</div>
-    <br>
+    <!-- <div class="w-32 h-32 m-4 bg-yellow-800 cursor-progress">cursor</div>
+    <br> -->
     <!-- 4.hover-->
-    <div class="w-32 h-32 m-4 bg-white shadow-lg shadow-green-400 hover:shadow-red-400 ">hover</div>
-    <br>
+    <!-- <div class="w-32 h-32 m-4 bg-white shadow-lg shadow-green-400 hover:shadow-red-400 ">hover</div>
+    <br> -->
+
+    <!-- =================responsive design =========================== -->
+    <!-- <div class="h-screen bg-black sm:bg-blue-600 md:bg-red-500"></div> -->
+
+    <!-- ===============reusing styles (@apply)=========================== -->
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+    <div class="box !bg-[red]">box4</div>
+        <br>
+    <!-- ===============customization=================================== -->
+    <div class="box">box1</div>
+    <div class="box !bg-clifford">box2</div>
+    <div class="box bp:text-yellow-400">box3</div>
+    <div class="text-5xl box font-poor">box4</div>
+
 </body>
 </html>
