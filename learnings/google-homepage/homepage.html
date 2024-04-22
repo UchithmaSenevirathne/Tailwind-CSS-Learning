@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col h-screen">
+    <!-- navbar -->
+    <ul class="flex items-center justify-end gap-5 pt-3 pr-5 text-sm">
+        <li>
+            <a href="#" class="hover:underline">Gmail</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">Images</a>
+        </li>
+        <li class="p-2 rounded-full hover:bg-gray-100">
+            <a href=""><img src="../assets/dots-menu.png" alt="" class="w-5 h-5"></a>
+        </li>
+        <li>
+            <a href="#" class="bg-[#1a73e8] px-8 py-2 text-white rounded-md hover:bg-[#1b66c9] hover:shadow">Sign In</a>
+        </li>
+    </ul>
+    
+    <!-- main section -->
+    <div class="flex flex-col items-center gap-6 pt-24 text-sm grow">
+        <img class="w-[272px] h-[92px]" src="../assets/google.png" alt="">
+        
+        <!-- search bar -->
+        <div class="flex w-full max-w-screen-sm gap-4 px-4 py-3 border rounded-full hover:shadow-lg">
+            <img class="w-5 h-5 mt-1" src="../assets/loupe.png" alt="">
+            <input class="focus:outline-none grow" type="text">
+            <img src="../assets/googlemic_clr_24px.svg" alt="">
+            <img class="w-6 h-6" src="../assets/lens_icon.svg" alt="">
+        </div>
+
+        <div class="flex gap-4">
+            <a href="#" class="px-4 py-2 bg-gray-100 border border-gray-100 rounded-sm hover:border-gray-300">Google Search</a>
+            <a href="#" class="px-4 py-2 bg-gray-100 border border-gray-100 rounded-sm hover:border-gray-300">I'm Feeling Lucky</a>
+        </div>
+        <div>
+            Google offered in: <a href="#" class="mx-3 text-blue-700 hover:underline">සිංහල</a> <a href="#" class="text-blue-700 hover:underline">தமிழ்</a> 
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <footer class="text-sm text-gray-600 bg-gray-100">
+        <div class="py-3 pl-7">
+            Sri Lanka
+        </div>
+        <div class="flex justify-between py-3 border-t border-gray-300">
+            <ul class="flex gap-8 pl-7">
+                <li>About</li>
+                <li>Advertising</li>
+                <li>Business</li>
+                <li>How Search Works</li>
+            </ul>
+            <ul class="flex gap-8 pr-7">
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
